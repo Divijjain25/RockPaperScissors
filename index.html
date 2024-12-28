@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game-container">
+    <!-- Header Section -->
+    <div class="header">
+      <div class="title">
+        <h2>ROCK</h2>
+        <h2>PAPER</h2>
+        <h2>SCISSORS</h2>
+      </div>
+      <div class="score-board">
+        <div class="score">
+          <p>COMPUTER SCORE</p>
+          <p id="computer-score">0</p>
+        </div>
+        <div class="score">
+          <p>YOUR SCORE</p>
+          <p id="your-score">0</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Game Area -->
+    <div class="game-area">
+      <div id="choices-container" class="choices">
+        <button id="rock" class="choice">✊</button>
+        <button id="paper" class="choice">✋</button>
+        <button id="scissors" class="choice">✌️</button>
+      </div>
+      <p id="result-message" class="result-message"></p>
+    </div>
+
+
+    
+    
+
+    
+
+    <!-- Rules Section -->
+    <div class="rules-container">
+      <button id="rules-btn" class="rules-btn">RULES</button>
+      <div id="rules-modal" class="rules-modal">
+        <div class="modal-content">
+          <h2>Game Rules</h2>
+          <p>Rock beats scissors, scissors beat paper, and paper beats rock.</p>
+          <p>Choose your move, and the computer will pick a move randomly.</p>
+          <button class="close-btn">CLOSE</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="victory-screen" class="victory-screen hidden">
+    <h1>🎉 HURRAY!! 🎉</h1>
+    <p>YOU WON THE GAME!</p>
+    <button id="play-again-btn" class="play-again-btn">PLAY AGAIN</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
